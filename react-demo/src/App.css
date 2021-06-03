@@ -92,6 +92,17 @@ ul {
 .nav-link.active {
   background-color: #86bc42;
 }
+.menu-right {
+  display: flex;
+  align-items: center;
+}
+.menu-right li {
+  padding: 0px 12px;
+  font-size: 16px;
+}
+.menu-right a {
+  color: #fff;
+}
 .page-main {
   padding: 48px 16px 16px;
   min-height: calc(100vh -  120px);

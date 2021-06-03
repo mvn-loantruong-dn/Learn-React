@@ -20,13 +20,19 @@ class Header extends React.Component {
                 <a class="nav-link" href="#">News</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
               </li>
             </ul>
           </nav>
           <ul class="menu-right">
             <li><a href="#" class="menu-item"><i class="fa fa-search"></i></a></li>
-            <li><a href="#" class="menu-cart"><i class="fa fa-search"></i></a></li>
+            <li><a href="#" class="menu-cart"><i class="fa fa-shopping-cart"></i></a></li>
           </ul>
         </div>
       </header>
