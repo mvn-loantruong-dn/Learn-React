@@ -51,7 +51,7 @@ ul {
   margin: 0 auto;
 }
 .page-header {
-  padding: 6px 16px;
+  padding: 0 16px;
   height: 60px;
   color: #fff;
   background: #0f3661;
@@ -89,7 +89,7 @@ ul {
   color: #fff;
   text-decoration: none;
 }
-.nav-link.active {
+.nav-item.active {
   background-color: #86bc42;
 }
 .menu-right {
