@@ -71,6 +71,9 @@ ul {
   align-items: center;
   justify-content: space-between;
 }
+.flex-col {
+  flex-direction: column;
+}
 .page-header .logo img {
   min-width: 35px;
   height: 50px;
@@ -78,6 +81,7 @@ ul {
 }
 .navbar-nav {
   display: flex;
+  height: 60px;
 }
 .nav-link {
   padding: 0 25px 0px 30px;
@@ -107,11 +111,52 @@ ul {
   padding: 48px 16px 16px;
   min-height: calc(100vh -  120px);
 }
-.content {
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-bottom: 2px solid #0f3661;
+  background: #ecf0f1;
+  padding-left: 0;
+}
+.tab-button {
+  background: #ecf0f1;
+  padding: 20px 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  flex: 1;
+}
+.tab-button:first-child {
+  border-right: 1px solid #AEB5B8;
+}
+.tab-content {
   text-align: center;
+  min-height: 300px;
+  border: 1px solid #AEB5B8;
+  padding: 20px;
 }
 .content img {
   height: 300px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.btn-primary {
+  width: 120px;
+  height: 40px;
+  border: 2px solid #86bc42;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #86bc42;
+  border-radius: 25px;
+  color: #fff;
+  text-transform: uppercase;
 }
 .page-footer {
   background-color: #0f3661;
