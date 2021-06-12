@@ -13,7 +13,6 @@ class App extends Component {
   }
 
   handleChangePage(page) {
-    console.log(page);
     this.setState({
       page
     });
