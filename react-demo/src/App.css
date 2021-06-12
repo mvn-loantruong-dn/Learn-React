@@ -116,9 +116,11 @@ ul {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  border: 1px solid #AEB5B8;
   border-bottom: 2px solid #0f3661;
   background: #ecf0f1;
   padding-left: 0;
+  
 }
 .tab-button {
   background: #ecf0f1;
