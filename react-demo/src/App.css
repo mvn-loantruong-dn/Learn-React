@@ -110,6 +110,42 @@ ul {
 .content {
   text-align: center;
 }
+.done {
+  color: red;
+  text-decoration: line-through;
+}
+.undone {
+  color: #0f3661;
+}
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.icon {
+  margin: 6px 10px 6px 0;
+}
+button.close {
+  -webkit-appearance: none;
+  padding: 0;
+  cursor: pointer;
+  background: 0 0;
+  border: 0;
+}
+.close {
+  float: right;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);
+  opacity: .2;
+}
 .content img {
   height: 300px;
 }
