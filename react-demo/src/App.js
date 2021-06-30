@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './Header';
 import Footer from './Footer';
-import Form from './Form';
+import FormHooks from './FormHooks';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
     <Header></Header>
     <main className="page-main flex-centered">
       <div className="container">
-        <Form />
+        <FormHooks />
       </div>
     </main>
     <Footer></Footer>
