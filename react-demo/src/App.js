@@ -1,15 +1,15 @@
 import './App.css';
 import Header from './Header';
 import Footer from './Footer';
-import FormHooks from './FormHooks';
+import ListUsersEffect from './ListUsers';
 
 function App() {
   return (
     <>
     <Header></Header>
-    <main className="page-main flex-centered">
+    <main className="page-main">
       <div className="container">
-        <FormHooks />
+        <ListUsersEffect />
       </div>
     </main>
     <Footer></Footer>
