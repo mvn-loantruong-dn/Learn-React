@@ -3,12 +3,14 @@ import React, { useState, useEffect } from 'react'
 const ListUsersEffect = () => {
   const [users, setsUsers] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
+  const [totalPages, setTotalPages] = useState();
 
   useEffect(() => {
     fetch(`https://reqres.in/api/users?page=${currentPage}`)
       .then(results => results.json())
       .then(e => {
         setsUsers(e.data);
+        setTotalPages(e.total_pages);
       });
   }, [currentPage]);
 
@@ -53,9 +55,10 @@ const ListUsersEffect = () => {
         <li className={`page-item ${currentPage === 1 ? 'disable' : ''}`} onClick={() => handleChangePage(1)}>
           <i className="fa fa-angle-left"></i>
         </li>
-        <li className={`page-item ${currentPage === 1 ? 'selected' : ''}`} onClick={() => handleChangePage(1)}>1</li>
-        <li className={`page-item ${currentPage === 2 ? 'selected' : ''}`} onClick={() => handleChangePage(2)}>2</li>
-        <li className={`page-item ${currentPage === 2 ? 'disable' : ''}`} onClick={() => handleChangePage(2)}>
+        {[...Array(totalPages)].map((x, i) =>
+          <li key={i} className={`page-item ${currentPage === i + 1 ? 'selected' : ''}`} onClick={() => handleChangePage(i+1)}>{i+1}</li>
+        )}
+        <li className={`page-item ${currentPage === totalPages ? 'disable' : ''}`} onClick={() => handleChangePage(totalPages)}>
           <i className="fa fa-angle-right"></i>
         </li>
       </ul>
