@@ -391,6 +391,6 @@ table th {
   background-color: rgba(0,0,0,.08);
 }
 .page-item.disable {
-  cursor: default;
   opacity: 0.6;
+  pointer-events: none;
 }
