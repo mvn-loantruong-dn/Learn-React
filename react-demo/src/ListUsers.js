@@ -52,13 +52,13 @@ const ListUsersEffect = () => {
         </tbody>
       </table>
       <ul className="pagination-bar">
-        <li className={`page-item ${currentPage === 1 ? 'disable' : ''}`} onClick={() => handleChangePage(1)}>
+        <li className={`page-item ${currentPage === 1 ? 'disable' : ''}`} onClick={() => handleChangePage(currentPage - 1)}>
           <i className="fa fa-angle-left"></i>
         </li>
         {[...Array(totalPages)].map((x, i) =>
           <li key={i} className={`page-item ${currentPage === i + 1 ? 'selected' : ''}`} onClick={() => handleChangePage(i+1)}>{i+1}</li>
         )}
-        <li className={`page-item ${currentPage === totalPages ? 'disable' : ''}`} onClick={() => handleChangePage(totalPages)}>
+        <li className={`page-item ${currentPage === totalPages ? 'disable' : ''}`} onClick={() => handleChangePage(currentPage + 1)}>
           <i className="fa fa-angle-right"></i>
         </li>
       </ul>
