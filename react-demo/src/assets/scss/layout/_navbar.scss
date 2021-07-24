@@ -1,0 +1,29 @@
+.navbar-nav {
+  display: flex;
+  .nav-link {
+    padding: 0 25px 0px 30px;
+    line-height: 60px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+    color: map-get($colors, white);
+    text-decoration: none;
+  }
+  .nav-item {
+    .active {
+      background-color: map-get($colors, secondary);
+    }
+  }
+}
+.menu-right {
+  display: flex;
+  align-items: center;
+  li {
+    padding: 0px 12px;
+    font-size: 16px;
+  }
+  a {
+    color: map-get($colors, white);
+  }
+}
