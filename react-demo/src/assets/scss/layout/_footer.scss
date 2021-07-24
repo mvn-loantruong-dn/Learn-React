@@ -1,0 +1,9 @@
+.page-footer {
+  background-color: map-get($colors, primary);
+  height: 65px;
+  p {
+    color: map-get($colors, txt-gray-light);
+    font-size: 12px;
+    text-align: center;
+  }
+}
