@@ -11,7 +11,7 @@ const useAuth = () => {
     return new Promise((res, rej) => {
       setTimeout(() => {
         console.log(email, password);
-        localStorage.setItem('user', JSON.stringify({email}));
+        localStorage.setItem('user', JSON.stringify(email));
         setUser({email});
         history.push('/account');
         res({email});
