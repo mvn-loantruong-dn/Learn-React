@@ -9,7 +9,7 @@ const Account = () => {
   }
   return (
     <div className="container">
-      <span>You are login successfully </span>
+      <p>You are login successfully </p>
       <p>Your account: {emailLogined} </p>
       <button className="btn-transparent link" onClick={handelLogout}>Logout</button>
     </div>
