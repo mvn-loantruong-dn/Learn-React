@@ -1,0 +1,26 @@
+.product-item {
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  .product-info {
+    text-align: center;
+    padding: 20px;
+    color: map-get($colors, primary);
+  }
+  img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .product-title {
+    font-style: italic;
+  }
+  .product-price {
+    color: map-get($colors, secondary);
+    font-size: 16px;
+    margin-top: 5px;
+  }
+}
+.product-detail-img {
+  height: 380px;
+  width: 100%;
+  border-radius: 8px;
+}

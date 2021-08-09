@@ -1,0 +1,31 @@
+.flex-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-col-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.txt-secondary {
+  color: map-get($colors, secondary);
+}
+.txt-primary {
+  color: map-get($colors, primary);
+}
+.txt-center {
+  text-align: center;
+}
+.mb-16 {
+  margin-bottom: 16px;
+}
+.link {
+  color: map-get($colors, secondary);
+  text-decoration: underline;
+}
