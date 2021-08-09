@@ -1,8 +1,11 @@
 import React from 'react';
 import { FaUser, FaCartPlus } from 'react-icons/fa';
 import { Link, NavLink } from "react-router-dom";
+import { useSelector } from 'react-redux';
+
 
 const Header = () => {
+  const checkLogin = useSelector((state) => state.isLogined.value);
   return (
     <header className="page-header">
       <div className="container flex-space-between">
@@ -38,6 +41,11 @@ const Header = () => {
           <li>
             <Link to="/" className="menu-item"><FaCartPlus /></Link>
           </li>
+          {checkLogin &&
+            <li>
+              <Link to="/account" className="menu-item">Hello user</Link>
+            </li>
+          }
         </ul>
       </div>
     </header>

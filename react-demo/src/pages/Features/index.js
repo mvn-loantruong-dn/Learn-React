@@ -1,16 +1,18 @@
 import React from 'react';
-import Home from './Home';
-import AboutUs from './AboutUs';
-import Products from './Products';
-import News from './News';
-import Events from './Events';
-import Contact from './Contact';
 import { Switch, Route } from "react-router-dom";
-import ProductDetail from './ProductDetail';
+
+const Home = React.lazy(() => import('./Home'));
+const AboutUs = React.lazy(() => import('./AboutUs'));
+const Products = React.lazy(() => import('./Products'));
+const News = React.lazy(() => import('./News'));
+const Events = React.lazy(() => import('./Events'));
+const Contact = React.lazy(() => import('./Contact'));
+const ProductDetail = React.lazy(() => import('./ProductDetail'));
 
 const Features = () => {
   return (
     <>
+     <React.Suspense fallback={<span>Loading...</span>}>
       <Switch>
         <Route exact path="/">
           <Home />
@@ -34,6 +36,7 @@ const Features = () => {
           <Contact />
         </Route>
       </Switch>
+     </React.Suspense>
     </>
   )
 }
