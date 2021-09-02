@@ -2,17 +2,17 @@ import React from 'react';
 import { FaUser, FaRegHeart } from 'react-icons/fa';
 import { Link, NavLink } from "react-router-dom";
 import { useSelector } from 'react-redux';
+import logo from './../../assets/images/logo.png';
 
 
 const Header = () => {
   const checkLogin = useSelector((state) => state.isLogined.value);
   const favs = useSelector(state => state.fav.value);
-  console.log(favs);
   return (
     <header className="page-header">
       <div className="container flex-space-between">
         <div className="logo">
-          <Link to="/"><img src="https://cdn.shopify.com/s/files/1/0554/6006/9585/files/logo.png?v=1617693293" alt="Logo" /></Link>
+          <Link to="/"><img src={logo} alt="Logo" /></Link>
         </div>
         <nav className="navbar">
           <ul className="navbar-nav">
