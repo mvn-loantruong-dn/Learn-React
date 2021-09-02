@@ -29,3 +29,13 @@
   color: map-get($colors, secondary);
   text-decoration: underline;
 }
+.blog-desc {
+  color: #646a7c;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: left;
+  word-break: break-all;
+}
+.active {
+  color: #e62e05;
+}

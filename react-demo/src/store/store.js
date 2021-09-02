@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
 import loginReducer from './loginSlice';
+import favReducer from './favSlice'
 
 export const store = configureStore({
   reducer: {
-    isLogined: loginReducer
+    isLogined: loginReducer,
+    fav: favReducer
   },
 })

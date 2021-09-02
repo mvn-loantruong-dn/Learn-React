@@ -1,16 +1,18 @@
 import React from 'react';
-import { FaUser, FaCartPlus } from 'react-icons/fa';
+import { FaUser, FaRegHeart } from 'react-icons/fa';
 import { Link, NavLink } from "react-router-dom";
 import { useSelector } from 'react-redux';
 
 
 const Header = () => {
   const checkLogin = useSelector((state) => state.isLogined.value);
+  const favs = useSelector(state => state.fav.value);
+  console.log(favs);
   return (
     <header className="page-header">
       <div className="container flex-space-between">
         <div className="logo">
-          <Link to="/"><img src="./logo192.png" alt="Logo" /></Link>
+          <Link to="/"><img src="https://cdn.shopify.com/s/files/1/0554/6006/9585/files/logo.png?v=1617693293" alt="Logo" /></Link>
         </div>
         <nav className="navbar">
           <ul className="navbar-nav">
@@ -38,8 +40,13 @@ const Header = () => {
           <li>
             <Link to="/account" className="menu-item"><FaUser /></Link>
           </li>
-          <li>
-            <Link to="/" className="menu-item"><FaCartPlus /></Link>
+          <li className="wishlist">
+            <Link to="/" className="menu-item">
+              <FaRegHeart />
+              <span className="wishlist-counter">
+                {!favs.length ? '0' : favs.length}
+              </span>
+            </Link>
           </li>
           {checkLogin &&
             <li>

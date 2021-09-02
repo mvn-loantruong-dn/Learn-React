@@ -46,8 +46,8 @@ const Products = () => {
         </div>
         <div className="row">
           {products.map((prd) =>
-            <div className="col-3">
-              <div className="product-item" key={prd.id}>
+            <div className="col-3" key={prd.id}>
+              <div className="product-item">
                 <Link to={"/products/" + prd.id}>
                   <img src={prd.image} alt="prd" />
                   <div className="product-info">
