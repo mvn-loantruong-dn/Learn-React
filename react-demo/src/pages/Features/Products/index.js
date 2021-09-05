@@ -1,29 +1,33 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
+import prd1 from '../../../assets/images/prd1.jpeg';
+import prd2 from '../../../assets/images/prd2.jpeg';
+import prd3 from '../../../assets/images/prd3.jpeg';
+import prd4 from '../../../assets/images/prd4.jpeg';
 
 const Products = () => {
   const [products] = useState([
     {
       id: 1,
-      image: 'https://avada.theme-fusion.com/country-butcher/wp-content/uploads/sites/154/2021/01/t-bone-steak.jpg',
+      image: prd1,
       title: 'Porterhouse Steak',
       price: '$40.00 – $90.00'
     },
     {
       id: 2,
-      image: 'https://avada.theme-fusion.com/country-butcher/wp-content/uploads/sites/154/2021/01/streaky-bacon.jpg',
+      image: prd2,
       title: 'Streaky Bacon',
       price: '$50.00 – $90.00'
     },
     {
       id: 3,
-      image: 'https://avada.theme-fusion.com/country-butcher/wp-content/uploads/sites/154/2021/01/seasoned-chicken.jpg',
+      image: prd3,
       title: 'Chicken Fillet',
       price: '$52.00 – $90.00'
     },
     {
       id: 4,
-      image: 'https://avada.theme-fusion.com/country-butcher/wp-content/uploads/sites/154/2021/01/beef-tenderloin.jpg',
+      image: prd4,
       title: 'Beef Tenderloin',
       price: '$22.00 – $90.00'
     }

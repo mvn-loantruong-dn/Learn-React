@@ -3,34 +3,38 @@ import { Link } from "react-router-dom";
 import { FaRegHeart } from 'react-icons/fa';
 import { useDispatch } from 'react-redux';
 import { toggle } from '../../../store/favSlice';
+import blog1 from '../../../assets/images/blog1.jpg';
+import blog2 from '../../../assets/images/blog2.jpeg';
+import blog3 from '../../../assets/images/blog3.jpeg';
+import blog4 from '../../../assets/images/blog4.jpeg';
 
 const Home = () => {
   const dispatch = useDispatch();
   const [blogs, setBlogs] = useState([
     {
       id: 1,
-      image: 'https://cdn.shopify.com/s/files/1/0412/8151/9765/articles/food-blog7_700x503_crop_center.jpg?v=1610514138',
+      image: blog1,
       title: 'Stauberry Cupcake Mix',
       des: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit doli.',
       favs: false
     },
     {
       id: 2,
-      image: 'https://cdn.shopify.com/s/files/1/0412/8151/9765/articles/food-blog5_700x503_crop_center.jpg?v=1610514040',
+      image: blog2,
       title: 'Incredible Sandwich Pizza',
       des: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit doli.',
       favs: false
     },
     {
       id: 3,
-      image: 'https://cdn.shopify.com/s/files/1/0412/8151/9765/articles/food-blog8_700x503_crop_center.jpg?v=1610514338',
+      image: blog3,
       title: 'Italian Chiken Peri Peri',
       des: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit doli.',
       favs: false
     },
     {
       id: 4,
-      image: 'https://cdn.shopify.com/s/files/1/0412/8151/9765/articles/food-blog2_700x503_crop_center.jpg?v=1610516805',
+      image: blog4,
       title: 'Delicious Mayonise Pizza',
       des: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit doli.',
       favs: false
