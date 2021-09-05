@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 
 const Products = () => {
-  const [products, setProducts] = useState([
+  const [products] = useState([
     {
       id: 1,
       image: 'https://avada.theme-fusion.com/country-butcher/wp-content/uploads/sites/154/2021/01/t-bone-steak.jpg',
