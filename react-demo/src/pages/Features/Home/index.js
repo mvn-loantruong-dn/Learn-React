@@ -53,16 +53,6 @@ const Home = () => {
   }
   return (
     <div className="container">
-      <div className="col-6 mb-16">
-        <iframe
-          title="hello"
-          src="https://dev.turidoco.com/pages/maps-embed?lat=35.313835230153046&long=139.48416397924788&map_layers=1,2,3&zoom=9&display_fishing_icon=true&display_fishing_link=true&uid=bb7e3b52-6592-4bdf-baf3-66165fbaa377" 
-          width="1200" 
-          height="450"
-          frameBorder="0"
-          allowFullScreen="">
-        </iframe>
-      </div>
       <div className="heading">
         <h2 className="text-uppercase">Love Food 
           <span className="txt-secondary"> Stories</span>
