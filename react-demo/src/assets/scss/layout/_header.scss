@@ -1,0 +1,18 @@
+.page-header {
+  padding: 0 16px;
+  height: 60px;
+  color: map-get($colors, white);
+  background: map-get($colors, primary);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1020;
+  .logo {
+    img {
+      min-width: 35px;
+      height: 50px;
+      display: block;
+    }
+  }
+}
